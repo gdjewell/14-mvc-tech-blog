@@ -98,10 +98,10 @@ router.delete("/:id", authenticated, (req, res) => {
   })
 
     .then((userData) => {
-      if (!deletedPost) {
+      if (!userData) {
         res.json({ message: "Couldn't find post with this ID" });
       }
-      res.json(deletedPost);
+      res.json(userData);
     })
     .catch((err) => {
       res.status(500).json(err);
