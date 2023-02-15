@@ -1,0 +1,42 @@
+
+
+<div class="card">
+  <div class="card-body">
+      <h4 class="card-title bg-dark text-light text-left">
+        {{post.title}}
+      </h4>
+      <p class="card-text bg-light"> 
+     {{post.post_content}}
+     </p>
+     
+     <div class="text-right">
+       {{user.username}} | {{new_date post.createdAt}}
+
+     </div>
+
+   </div>
+  </div>
+ <div class="row">
+     <div class="col-6 my-2">
+      <a href="/dashboard/edit/{{post.id}}">
+        <button id="editPostSelector" class="btn-danger btn">Edit Post</button>
+      </a>
+      </div>
+ </div>
+
+{{#if loggedIn}}
+
+<form class="new-comment form-control">
+  <input type="hidden" id="post_id" value={{post.id}}>
+  <textarea class="comment-entry form-control name=comment-content" id="comment-input"></textarea>
+  <button type="submit" class="btn btn-primary">Create Comment</button>
+
+</form>
+
+{{> comment post.comments}}
+
+
+
+<script src="/js/comments.js"></script>
+
+{{/if}}
