@@ -4,6 +4,8 @@
 
 This blog allows you to create posts, comments and new users. It will direct you to a dashboard once logged in in order to create/edit/delete your posts. People can also comment on the posts, and the comments will show up underneath single posts.
 
+Deployed app: https://mvc-tech-blog-bootcamp-14.herokuapp.com/
+
 ## Table of Contents
 
 - [Usage](#usage)
