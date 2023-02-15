@@ -14,6 +14,10 @@ This blog allows you to create posts, comments and new users. It will direct you
 
 Upon arriving at the site you will need to sign up. Upon signing up you are taken to the dashboard. From here, you can create a new post, and have people comment on your posts. You are then able to delete your posts at any time.
 
+## Screenshot
+
+![](./public/assets/screenshot.jpg)
+
 ## Contact
 
 You can reach me via email at [gdjewell@gmail.com](mailto:gdjewell@gmail.com) or on GitHub at [@gdjewell](https://gdjewell.github.com).
