@@ -9,6 +9,9 @@ const router = require("express").Router();
 router.get("/", authenticated, (req, res) => {
   Post.findAll({
     include: [{ model: User, attributes: ["username"] }],
+    where: {
+      user_id: req.session.user_id,
+    },
   }).then((postInfo) => {
     const posts = postInfo.map((posts) => posts.get({ plain: true }));
     res.render("dashboard", {
